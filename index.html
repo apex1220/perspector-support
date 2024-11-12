@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perspector Support</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #333; }
+        header { background: #4CAF50; color: #fff; padding: 1em; text-align: center; }
+        main { padding: 1em; max-width: 800px; margin: auto; }
+        h2 { color: #4CAF50; }
+        footer { background: #f1f1f1; padding: 1em; text-align: center; font-size: 0.9em; }
+        .faq-item { margin-bottom: 1em; }
+        .contact-email { font-weight: bold; color: #4CAF50; }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var userLang = navigator.language || navigator.userLanguage;
+            if (userLang.startsWith("ja")) {
+                document.getElementById("en").style.display = "none";
+                document.getElementById("ja").style.display = "block";
+            } else {
+                document.getElementById("ja").style.display = "none";
+                document.getElementById("en").style.display = "block";
+            }
+        });
+    </script>
+</head>
+
+<body>
+
+<!-- English Version -->
+<div id="en" style="display:none;">
+    <header>
+        <h1>Perspector Support</h1>
+        <p>Your gateway to assistance with Perspector</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>About Perspector</h2>
+            <p>Perspector is a high-precision, wide-area meshing app developed for VisionPro, enabling extensive data storage and OBJ export functionality. Whether for professional tasks or development, Perspector provides detailed spatial visualization and seamless scanning.</p>
+        </section>
+
+        <section>
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <h3>How do I export data?</h3>
+                <p>To export data, simply press the "Export" button in the left-hand menu.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>What should I do to achieve maximum area meshing?</h3>
+                <p>To achieve the largest possible meshing area, close all background tasks before launching the app. This optimizes performance and memory allocation for extended scanning.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>No new mesh is generating. What should I do?</h3>
+                <p>If new mesh data is not appearing, try switching from Meshing View to Overhead View, then back to Meshing View. This can help refresh the mesh generation process.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Can I remove and re-wear the headset during meshing?</h3>
+                <p>For optimal tracking accuracy, avoid removing and re-wearing the headset during meshing. Frequent removal can disrupt tracking stability, so it's best to keep the headset on continuously while meshing.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Contact Us</h2>
+            <p>If you have further questions or need assistance, please contact us at: <span class="contact-email">4divide@gmail.com</span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Shuhei Terahata. All rights reserved.</p>
+    </footer>
+</div>
+
+<!-- Japanese Version -->
+<div id="ja" style="display:none;">
+    <header>
+        <h1>Perspector サポート</h1>
+        <p>Perspectorのサポート情報はこちらです</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Perspectorについて</h2>
+            <p>PerspectorはVisionPro向けに開発された高精度の広域メッシングアプリで、広範なデータ保存やOBJエクスポート機能を提供します。業務用でも開発用でも、詳細な空間可視化とスムーズなスキャンが可能です。</p>
+        </section>
+
+        <section>
+            <h2>よくある質問</h2>
+            
+            <div class="faq-item">
+                <h3>データをエクスポートするには？</h3>
+                <p>左手のメニューで「エクスポート」ボタンを押すだけでエクスポートが完了します。</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>最大面積でメッシングを行うには？</h3>
+                <p>アプリを起動する前にバックグラウンドタスクをすべて終了してください。これにより、パフォーマンスとメモリの割り当てが最適化され、広範なスキャンが可能になります。</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>新しいメッシュが生成されない場合は？</h3>
+                <p>新しいメッシュが表示されない場合、一度メッシングビューから俯瞰ビューに切り替え、再びメッシングビューに戻してみてください。メッシュ生成プロセスのリフレッシュに役立ちます。</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>メッシング中にヘッドセットを着脱できますか？</h3>
+                <p>最適なトラッキング精度を保つため、メッシング中はヘッドセットの着脱を避けてください。頻繁に外すとトラッキングが不安定になる可能性があるため、メッシング中は連続してご使用ください。</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>お問い合わせ</h2>
+            <p>さらに質問がある場合やサポートが必要な場合は、直接 <span class="contact-email">4divide@gmail.com</span> までご連絡ください。</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Shuhei Terahata. All rights reserved.</p>
+    </footer>
+</div>
+
+</body>
+</html>
